@@ -147,7 +147,7 @@
 
 /*FORM*/
 
-form{
+.form1 {
     margin: 0em 12em;
 }
 
@@ -245,6 +245,38 @@ footer .container-fluid{
     font-style: normal;
 }
 
-.compraEntradas{
+.sizeEntrada{
+    width: 24em;
 
+}
+
+.sizeEntrada2{
+    width: 49em;
+    align-content: center;
+}
+
+.form2{
+    margin: 0em 18em;
+}
+
+.lbl{
+    margin: 0em 0em 1em 0em;
+}
+
+.sepLbl{
+    margin: 0em;
+}
+
+.totalApagar{
+    margin: 1em 0em;
+    color: #0040a5;
+    background-color:#cce5ff;
+    border-radius: 0.5em;
+    padding: 1em;
+}
+
+.borrarForm, .comprarForm{
+    background-color: #97c93e;
+    color: white;
+    margin: 1em 0em 2em;
 }
