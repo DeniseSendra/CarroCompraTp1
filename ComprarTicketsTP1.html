@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tp Denise Sendra</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+     <link href="css.css" rel="stylesheet">
+</head>
+<body>
+
+<!--Barra de inicio-->
+<nav class="navbar navbar-expand-sm fixed-top navbar-dark navbar-custom ">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+        <img src="https://www.cursophp.foxit.com.ar/comision2159/denise%20sendra/Tpintegrador/img/codoacodo.png" alt="codoacodo" width="80" height="50" class="d-inline-block align-text-top">
+        Conf Bs As
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">La conferencia</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="#knowOradores">Los oradores</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#lugar">El lugar y la fecha</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#beOrador">Conviértete en orador</a>
+          </li>
+          <li class="nav-item" >
+            <a class="nav-link active" id="hola"  >Comprar tickets</a>
+          </li>
+        </ul>
+        </div>
+    </div>
+</nav>
+<!--Termina la barra-->
+<br> <br> <br> <br>
+
+<!--Descuentos-->
+<div class="descuento">
+  
+        <div class="estudiante bordeDes">
+            <h5 class="promo">Estudiante</h5>
+            <p>Tienen un descuento</p>
+            <p class="porcentajes"> 80%</p>
+            <p class="condiciones">*presentar documentación</p>
+        </div>
+    
+    <div class="trainee bordeDes">
+        <h5 class="promo">Trainee</h5>
+        <p>Tienen un descuento</p>
+        <p class="porcentajes"> 50%</p>
+        <p class="condiciones">*presentar documentación</p>
+    </div>
+    
+    <div class="junior bordeDes">
+        <h5 class="promo">Junior</h5>
+        <p>Tienen un descuento</p>
+        <p class="porcentajes"> 15%</p>
+        <p class="condiciones">*presentar documentación</p>
+    </div>
+    
+</div>
+<!--fin Descuentos-->
+
+<br><br>
+
+<!--Form de compra-->
+<div class="container-fluid text-center">
+   <h6 class="tnormal">VENTA</h5>
+   <h1>VALOR DE TICKET $200</h1>
+</div>
+
+<!--Fin del Form-->
+<div class="container-fluid text-center compraEntradas">
+<form class="row g-3">
+    <div class="row g-3">
+        <div class="col">
+          <input type="text" class="form-control" placeholder="Nombre" aria-label="First name">
+        </div>
+        <div class="col">
+          <input type="text" class="form-control" placeholder="Apellido" aria-label="Last name">
+        </div>
+    </div>
+    <div class="col-12">
+      <input type="email" class="form-control"  placeholder="Correo" id="inputEmail4">
+    </div>
+   <div class="row">
+    <div class="col-md-6">
+      <label for="CantidadEntradas" class="form-label">Cantidad</label>
+      <input type="text" class="form-control" id="CantidadEntradas">
+    </div>
+    <div class="col-md-6">
+      <label for="inputState" class="form-label">Catigoria</label>
+      <select id="inputState" class="form-select">
+        <option selected>Estudiante</option>
+        <option>Trainee</option>
+        <option>Junior</option>
+      </select>
+    </div>
+    </div>
+    <div class="row">
+    <div class="col-6">
+        <button type="reset" class="btn btn-primary">borrar</button>
+    </div>    
+    <div class="col-6">
+      <button type="submit" class="btn btn-primary">resumen</button>
+    </div>
+    </div>
+  </form>
+</div>
+<!--Fotter-->
+
+<footer>
+    <div class="container-fluid">
+     <div class="row text-center">
+    
+         <div class="col"> 
+             Preguntas frecuentes 
+            </div>
+         <div class="col">
+             Contáctanos
+         </div>
+         <div class="col">
+             Prensa
+         </div>
+         <div class="col">
+             Conferencias
+         </div>
+         <div class="col">
+             Términos y condiciones
+         </div>
+         <div class="col">
+             Privacidad
+         </div>
+         <div class="col">
+             Estudiantes
+         </div>
+    
+     </div>
+    </div>
+</footer>
+    <!--Finfotter-->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
