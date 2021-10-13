@@ -81,7 +81,7 @@
 
 <!--Fin del Form-->
 <div class="container-fluid">
-<form class="row g-3 form2">
+<form class="row g-3" id="form2" action="#">
     <div class="row g-3 ">
         <div class="col-6 ">
           <input type="text" class="form-control sizeEntrada" placeholder="Nombre" aria-label="First name">
@@ -96,20 +96,20 @@
    <div class="row">
     <div class="col-md-6">
       <label for="CantidadEntradas" class="form-label lbl">Cantidad</label>
-      <input type="text" class="form-control sizeEntrada sepLbl" id="CantidadEntradas">
+      <input type="text" class="form-control sizeEntrada sepLbl" id="calcEntradas">
     </div>
     <div class="col-md-6">
       <label for="inputState" class="form-label lbl">Categoria</label>
-      <select id="inputState" class="form-select sizeEntrada sepLbl">
-        <option selected>Estudiante</option>
-        <option>Trainee</option>
-        <option>Junior</option>
+      <select id="inputState" class="form-select sizeEntrada sepLbl" >
+        <option selected value="1">Estudiante</option>
+        <option value="2">Trainee</option>
+        <option value="3">Junior</option>
       </select>
     </div>
     </div>
     <div class="row">
         <div class="totalApagar">
-        <label class="totalYdes">Total a pagar: $</label>
+        <label id="totalYdes">Total a pagar: $</label>
       </div>
     </div>
     <div class="row ">
@@ -117,7 +117,7 @@
         <button type="reset" class="btn sizeEntrada borrarForm">Borrar</button>
     </div>    
     <div class="col-6">
-      <button type="submit" class="btn sizeEntrada comprarForm">Resumen</button>
+      <button type="submit" class="btn sizeEntrada comprarForm" onclick="resultadoCompra1()">Resumen</button>
     </div>
     </div>
   </form>
