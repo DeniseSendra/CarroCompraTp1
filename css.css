@@ -249,14 +249,30 @@ footer .container-fluid{
     width: 24em;
 
 }
+@media (max-width: 1000px){
+    
+    .sizeEntrada{
+         width: 15em;}
+   }
 
 .sizeEntrada2{
     width: 49em;
     align-content: center;
 }
 
+@media (max-width: 1000px){
+    
+    .sizeEntrada2{ 
+        width: 15em;}
+   }    
+
+
 #form2{
     margin: 0em 18em;
+}
+@media (max-width: 1000px){
+
+ #form{ margin: 0em 8em;}
 }
 
 .lbl{

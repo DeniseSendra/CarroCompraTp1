@@ -4,16 +4,17 @@ var numEntradas = document.getElementById("calcEntradas");
 
 var resultadoAmostrar = document.getElementById("totalYdes");
 
-var mostrame = document.getElementById("mostrame");
+//var mostrame = document.getElementById("mostrame");
 
-mostrame.addEventListener('click', resultadoCompra1());
+//mostrame.addEventListener('click', resultadoCompra1());
 
+document.getElementById("mostrame").addEventListener('click',resultadoCompra1(),true);
 
 function resultadoCompra1(){
  
   var numEntradas = document.getElementById("calcEntradas").value; 
   totalEntradas = numEntradas * 200;
-  resultadoCompra = "0"; 
+  var resultadoCompra = "0"; 
   
   var descuentoValue = document.getElementById("inputState").value;
 
@@ -24,6 +25,6 @@ function resultadoCompra1(){
   }else{
       resultadoCompra = totalEntradas - (totalEntradas * 0.15);
   }
- 
+ console.log(resultadoCompra);
  resultadoAmostrar.innerText= "Total a pagar " + resultadoCompra + " $";
 }
